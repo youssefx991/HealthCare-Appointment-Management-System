@@ -1,20 +1,20 @@
 #include "Headers/Schedule.h"
 
-Schedule::Schedule()
+Schedule::Schedule() : Appointment()
 {
-    Appointment::Appointment();
+    // Appointment::Appointment();
 }
 
 
-Schedule::Schedule(Patient patient, Doctor doctor, std::string date)
+Schedule::Schedule(Patient patient, Doctor doctor, std::string date) : Appointment(patient, doctor, date)
 {
-    Appointment::Appointment(patient, doctor, date);
+    // Appointment::Appointment(patient, doctor, date);
 }
 
 void Schedule::viewSchedule()
 {
     
-    for (Appointment appointment : Appointment::doctor.schedule)
+    for (Appointment appointment : Appointment::doctor->schedule)
     {
         appointment.viewAppointment();
     }
@@ -22,7 +22,7 @@ void Schedule::viewSchedule()
 void Schedule::approveAppointment(int appointmentID)
 {
     
-    for (Appointment appointment : Appointment::doctor.schedule)
+    for (Appointment appointment : Appointment::doctor->schedule)
     {
         if (appointment.appointmentID == appointmentID)
         {

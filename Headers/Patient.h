@@ -1,9 +1,14 @@
-#include <vector>
+#ifndef PATIENT_H
+#define PATIENT_H
 
+#include <vector>
 #include "Profile.h"
 #include "User.h"
 #include "MedicalRecord.h"
 
+class MedicalRecord;
+class Appointment;
+class Profile;
 
 class Patient : public User
 {
@@ -18,3 +23,5 @@ public:
     void viewDetails();
     void viewMedicalHistory();
 };
+
+#endif

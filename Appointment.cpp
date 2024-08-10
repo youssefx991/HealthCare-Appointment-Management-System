@@ -7,8 +7,8 @@ Appointment::Appointment() {}
 
 Appointment::Appointment(Patient patient, Doctor doctor, std::string date)
 {
-    this->patient = patient;
-    this->doctor = doctor;
+    this->patient = &patient;
+    this->doctor = &doctor;
     this->date = date;
     this->status = AppointmentStatus::PENDING;
 

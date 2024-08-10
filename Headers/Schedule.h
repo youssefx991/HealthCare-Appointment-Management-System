@@ -1,3 +1,6 @@
+#ifndef SCHEDULE_H
+#define SCHEDULE_H
+
 #include "Appointment.h"
 #include "MedicalRecord.h"
 #include "Doctor.h"
@@ -12,3 +15,5 @@ public:
     void viewSchedule();
     void approveAppointment(int appointmentID);
 };
+
+#endif

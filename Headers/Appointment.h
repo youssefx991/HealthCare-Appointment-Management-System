@@ -7,6 +7,8 @@
 #include "Patient.h"
 #include "Doctor.h"
 
+class Doctor;
+class Patient;
 enum AppointmentStatus
 {
     APPROVED,
@@ -18,8 +20,8 @@ class Appointment
 {
 public:
     static int appointmentID;
-    Patient patient;
-    Doctor doctor;
+    Patient* patient;
+    Doctor* doctor;
     std::string date;
     AppointmentStatus status;
 

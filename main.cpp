@@ -1,23 +1,16 @@
 #include <iostream>
 #include "./Headers/Profile.h"
+#include "./Headers/Patient.h"
+#include "Headers/PatientAppointment.h"
 
 int main()
 {
-    // Profile profile("JAN", 'm', "Siemens");
-    // Patient patient("youssef", "youssef@youssef.com", "ysf123", profile);
-    // Doctor doctor("Ahmed", "a@a.com", "a123", "Eyes");
+    Profile profile("JAN", 'm', "Siemens");
+    Patient patient("youssef", "youssef@youssef.com", "ysf123", profile);
+    
+    std::cout<<patient.email<<std::endl;
 
-    // PatientAppointment patient_appointmnet(patient, doctor, "JAN");
-
-    // patient_appointmnet.bookAppointment(patient_appointmnet);
-
-    // for (Appointment app : patient.appointments)
-    // {
-    //     std::cout << app.patient.name << " --- " << app.doctor.name << std::endl;
-    // }
-
-    Profile p("a", 'a', "a");
-    // std::cout<<p.address<<std::endl;
+    std::cout<<"Hello World"<<std::endl;
 
     return 0;
 }

@@ -6,7 +6,7 @@
 #include <vector>
 
 #include "User.h"
-
+class User;
 class Admin
 {
 public:

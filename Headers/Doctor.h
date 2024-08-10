@@ -1,5 +1,10 @@
+#ifndef DOCTOR_H
+#define DOCTOR_H
+
+
 #include "Appointment.h"
 
+class Appointment;
 class Doctor : public User
 {
 public:
@@ -11,3 +16,5 @@ public:
 
     void viewPatientDetails(int);
 };
+
+#endif

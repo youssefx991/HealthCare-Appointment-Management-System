@@ -1,3 +1,6 @@
+#ifndef PROFILE_H
+#define PROFILE_H
+
 #include <string>
 
 class Profile
@@ -13,3 +16,5 @@ public:
     void deleteProfile();
     void updateProfile(Profile);
 };
+
+#endif
